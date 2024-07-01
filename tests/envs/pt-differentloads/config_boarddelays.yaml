@@ -1,0 +1,16 @@
+network_path: "network.xml"
+pt_schedule_path: "transitschedule.xml"
+pt_vehicles_path: "transitVehicles.xml"
+od_path: "od_boarddelays.csv"
+basin_radius_m: 500.0
+delay_tolerance_s: 1800
+initial_wait_tolerance_s: 300
+transfer_time_s: 60
+transfer_radius_m: 100.0
+beeline_dist_factor: 1.3
+walk_speed_mps: 4.1667
+max_transfers: 2
+mean_intersection_time_s: 10.0
+board_period_s: 5.0
+disembark_period_s: 2.0
+ignore_small_components: false

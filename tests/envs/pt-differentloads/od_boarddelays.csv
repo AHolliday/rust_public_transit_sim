@@ -1,0 +1,9 @@
+ID,h_id,p_rank,t_orix,t_oriy,t_desx,t_desy,t_time,t_expf,succeeds,planned departure ids,real departure ids,notes
+0,0,0,30,5,40016,-3,745,20,true,0,0,"rides one route, gets on at planned time"
+1,1,0,30,5,40016,40020,745,10,true,"0,0","0,0","rides two routes, all on time"
+2,2,0,20005,-5,40016,-3,805,1,true,0,1,"rides one route from stop 1, but misses planned departure"
+3,3,0,30,5,40016,-3,745,5,true,0,1,"rides one route from stop 0, but misses planned departure"
+4,4,0,20,20,40016,40020,745,5,true,"0,0","1,1","rides one route, but misses both planned departures"
+5,5,0,30,5,40016,40020,955,15,false,"2,2",2,"delay in first route caused by number of boarders leads to missing connection, and trip failure."
+6,6,0,20005,-5,40016,40020,1005,15,false,"2,2",2,"delay in first route caused by number of boarders leads to missing connection, and trip failure."
+7,7,0,30,5,40016,-3,2320,30,true,3,3,delay in first route caused by number of boarders leads to vehicle completing its schedule after midnight.

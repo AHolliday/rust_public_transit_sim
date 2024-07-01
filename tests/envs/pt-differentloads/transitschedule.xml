@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE transitSchedule SYSTEM "http://www.matsim.org/files/dtd/transitSchedule_v1.dtd">
+<transitSchedule>
+<transitStops>
+  <stopFacility id="0 on 0-1" x="10" y="2" linkRefId="0-1"/>
+  <stopFacility id="1 on 1-2" x="20010.0" y="2" linkRefId="1-2"/>
+  <stopFacility id="2 on 2-1" x="39990.0" y="-2.0" linkRefId="2-1"/>
+  <stopFacility id="1 on 1-0" x="19990" y="-2" linkRefId="1-0"/>
+  <stopFacility id="2 on 2-3" x="39990" y="0" linkRefId="2-3"/>
+  <stopFacility id="3 on 3-4" x="39990" y="20100" linkRefId="3-4"/>
+  <stopFacility id="4 on 4-3" x="39990" y="40060" linkRefId="4-3"/>
+  <stopFacility id="3 on 3-2" x="39990" y="50" linkRefId="3-2"/>
+</transitStops>
+<transitLine id="0-2 loop">
+  <transitRoute id="0-2">
+    <transportMode>pt</transportMode>
+    <routeProfile>
+      <stop refId="0 on 0-1" departureOffset="00:00:30" awaitDeparture="true"/>
+      <stop refId="1 on 1-2" arrivalOffset="00:17:10" departureOffset="00:17:40" awaitDeparture="false"/>
+      <stop refId="2 on 2-1" arrivalOffset="00:33:50"/>
+    </routeProfile>
+    <route>
+      <link refId="0-1"/>
+      <link refId="1-2"/>
+      <link refId="2-1"/>
+    </route>
+    <departures>
+      <departure id="0" departureTime="08:00:00" vehicleRefId="0"/>
+      <departure id="1" departureTime="08:10:00" vehicleRefId="1"/>
+      <departure id="2" departureTime="10:00:00" vehicleRefId="0"/>
+      <departure id="3" departureTime="23:25:00" vehicleRefId="1"/>
+    </departures>
+  </transitRoute>
+  <transitRoute id="2-0">
+    <transportMode>pt</transportMode>
+    <routeProfile>
+      <stop refId="2 on 2-1" departureOffset="00:00:30" awaitDeparture="true"/>
+      <stop refId="1 on 1-0" arrivalOffset="00:17:10" departureOffset="00:17:40" awaitDeparture="false"/>
+      <stop refId="0 on 0-1" arrivalOffset="00:33:50"/>
+    </routeProfile>
+    <route>
+      <link refId="2-1"/>
+      <link refId="1-0"/>
+      <link refId="0-1"/>
+    </route>
+    <departures>
+      <departure id="0" departureTime="08:40:00" vehicleRefId="0"/>
+      <departure id="1" departureTime="08:50:00" vehicleRefId="1"/>
+      <departure id="2" departureTime="23:59:00" vehicleRefId="1"/>
+    </departures>
+  </transitRoute>
+</transitLine>
+<transitLine id="2-4 loop">
+  <transitRoute id="2-4">
+    <transportMode>pt</transportMode>
+    <routeProfile>
+      <stop refId="2 on 2-3" departureOffset="00:00:30" awaitDeparture="true"/>
+      <stop refId="3 on 3-4" arrivalOffset="00:17:10" departureOffset="00:17:40" awaitDeparture="false"/>
+      <stop refId="4 on 4-3" arrivalOffset="00:33:50"/>
+    </routeProfile>
+    <route>
+      <link refId="2-3"/>
+      <link refId="3-4"/>
+      <link refId="4-3"/>
+    </route>
+    <departures>
+      <departure id="0" departureTime="08:37:00" vehicleRefId="2"/>
+      <departure id="1" departureTime="08:47:00" vehicleRefId="3"/>
+      <departure id="2" departureTime="10:33:50" vehicleRefId="2"/>
+      <departure id="3" departureTime="12:00:00" vehicleRefId="3"/>
+    </departures>
+  </transitRoute>
+  <transitRoute id="2-0">
+    <transportMode>pt</transportMode>
+    <routeProfile>
+      <stop refId="4 on 4-3" departureOffset="00:00:30" awaitDeparture="true"/>
+      <stop refId="3 on 3-2" arrivalOffset="00:17:10" departureOffset="00:17:40" awaitDeparture="false"/>
+      <stop refId="2 on 2-3" arrivalOffset="00:33:50"/>
+    </routeProfile>
+    <route>
+      <link refId="4-3"/>
+      <link refId="3-2"/>
+      <link refId="2-3"/>
+    </route>
+    <departures>
+      <departure id="0" departureTime="09:12:00" vehicleRefId="2"/>
+      <departure id="1" departureTime="09:22:00" vehicleRefId="3"/>
+      <departure id="2" departureTime="11:20:00" vehicleRefId="2"/>
+    </departures>
+  </transitRoute>
+</transitLine>
+</transitSchedule>

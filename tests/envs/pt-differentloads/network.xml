@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE network SYSTEM "http://matsim.org/files/dtd/network_v1.dtd">
+<network>
+    <nodes>
+        <node x="0.0" y="0.0" id="0" />
+        <node x="20000.0" y="0.0" id="1" />
+        <node x="40000.0" y="0.0" id="2" />
+        <node x="40000.0" y="20000.0" id="3" />
+        <node x="40000.0" y="40000.0" id="4" />
+    </nodes>
+
+    <links capperiod="10:00:00">
+        <link id="0-1" modes="road" permlanes="1" capacity="2000" freespeed="20" length="20000" from="0" to="1"/>
+        <link id="1-2" modes="road" permlanes="1" capacity="2000" freespeed="20" length="20000" from="1" to="2"/>
+        <link id="2-1" modes="road" permlanes="1" capacity="2000" freespeed="20" length="20000" from="2" to="1"/>
+        <link id="1-0" modes="road" permlanes="1" capacity="2000" freespeed="20" length="20000" from="1" to="0"/>
+        <link id="2-3" modes="road" permlanes="1" capacity="2000" freespeed="20" length="20000" from="2" to="3"/>
+        <link id="3-4" modes="road" permlanes="1" capacity="2000" freespeed="20" length="20000" from="3" to="4"/>
+        <link id="4-3" modes="road" permlanes="1" capacity="2000" freespeed="20" length="20000" from="4" to="3"/>
+        <link id="3-2" modes="road" permlanes="1" capacity="2000" freespeed="20" length="20000" from="3" to="2"/>
+    </links>
+</network>
